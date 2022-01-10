@@ -1,0 +1,173 @@
+@mixin header_font_top {
+    font-family: 'Nivea Light OT';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+	color: $blu;
+
+}
+@mixin header_font_middle {
+    font-family: 'Nivea Light OT';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+	color: $blu;
+}
+/*<<<<<<<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>>>>>*/
+.header{
+    .header__body{
+        .header__top{
+            width: 100%;
+            height: 74px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include header_font_top;
+            .top__left{
+                display: flex;
+                align-items: center;
+                .logo{
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 40px;
+                    transition: ease .5s;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+                .left__link{
+                    margin-right: 30px;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-transform: uppercase;
+                    color: $blu;
+                    &::before{
+                        position: relative;
+                        top: 24px;
+                        display: block;
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: $blu;
+                        opacity: 0;
+                        transition: ease .5s;
+
+                    }
+                    &:hover{
+                        &::before{
+                            opacity: 1;
+                        }
+                    }
+
+                }
+            }
+            .top__right{
+                display: flex;
+                justify-content: space-between;
+                height: 35px;
+                width: 163px;
+                .right__vector{
+                    transition: ease .5s;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+        .header__middle{
+            width: 100%;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .middle__link{
+                @include header_font_middle;
+                transition: ease .5s;
+                &:hover{
+                    opacity: 0.5;
+                }
+
+            }
+            .middle__left{
+                display: flex;
+                align-items: center;
+                .middle_vector_1{
+                    width: 15px;
+                    height: 18px;
+                    transition: ease .5s;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+                .middle_vector_2{
+                    width: 8px;
+                    height: 14px;
+                    margin-right: 4.7px;
+                    margin-left: 6.3px;
+                }
+            }
+            .middle__right{
+                display: flex;
+                align-items: center;
+                .middle_vector_3{
+                    width: 9.82px;
+                    height: 12.5px;
+                    margin-right: 5.16px;
+                }
+            }
+        }
+        .header__button{
+            margin-top: 15px;
+            margin-bottom: -1px;
+            width: 100%;
+            display: flex;
+            .header__link{
+                padding: 10px 40px 9px 40px;
+                border: 1px solid #EFF5FA;
+                border-radius: 5px;
+                @include header_font_middle;
+                &.mr-no{
+                    margin-right: none;
+                } 
+                &.br-none{
+                    border-right: none;
+                }
+                &:hover{
+                    background-color: #ced5ef;
+                    color: white;
+                    transition: ease .5s;
+                }
+            }
+
+        }
+    }
+    .line{
+        position: absolute;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgb(214,220,236);
+    }
+    .line_1{
+        top: 74px;
+    }
+    .line_2{
+        top: 109px;
+    }
+    .banner{
+        width: 100%;
+        height: 650px;
+        margin-bottom: 73px;
+    }
+    .banner{
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 650px;
+        
+    }
+}

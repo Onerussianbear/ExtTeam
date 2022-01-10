@@ -1,0 +1,333 @@
+
+@mixin main_text {
+	font-family: 'Nivea Book OT';
+	font-weight: 100;
+	font-size: 16px;
+	line-height: 26px;
+	color: $blu;
+
+}
+@mixin title_style {
+    font-family: 'Nivea Bold Text OT';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blu;
+    
+}
+@mixin subtitle_style {
+    font-family: 'Nivea Bold Text OT';
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blu;
+}
+@mixin btn_buy {
+    background: $blu;
+    border-radius: 100px;
+    padding: 17px 40px;
+    font-family: 'Nivea Bold Text OT';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/*<<<<<<<<<<<<<<<<<<<<<< Main section >>>>>>>>>>>>>>>>>>>*/
+.main{
+
+    /*  cream Care block  */
+    .cream__Care{
+        margin: 0 0 50px 0;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content__title{
+            @include title_style;
+            &.title-w-1{
+                width: 600px;
+            }
+            &.title-w-2{
+                margin-top: 40px;
+            }
+        }
+        .content__block-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 42px 0 50px 0;
+            .block__frame-1{
+                width: 405px;
+                height: 250px;
+                .block__img-1{
+                    margin: 38px 0 0 46px;
+                    width: 329px;
+                    height: 248px;
+                    transition: ease .5s;
+                    &:hover{
+                        width: 350px;
+                        height: 270px;
+                    }
+                }
+            }
+            .content__text{
+                @include main_text;
+                &.text-b-1{
+                    margin: 0 60px 50px 0;
+                    margin-bottom: 50px;
+                    max-width: 405px;
+                }
+            }
+        }
+        .subtitle{
+            @include subtitle_style;
+            &.subtitle-mg-1{
+                margin-top: 25px;
+            }
+            &.subtitle-mg-2{
+                margin-top: -10px;
+                width: 659px;
+            }
+        }
+        .content__text{
+            @include main_text;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.text-b-2{
+                margin-top: 24px;
+                max-width: 700px;
+                text-align: center;
+            }
+        }
+        .content__img-1{
+            margin: 23px 0 25px 0;
+            width: 329px;
+            height: 248px;
+            transition: ease .5s;
+            &:hover{
+                width: 350px;
+            }
+
+        }
+        .background__gray{
+            margin-top: 34px;
+            background-color: #F7F8FA;
+        }
+        .content__list{
+            padding: 22px 0 16px 0;
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .content__vector_1{
+                margin-right: 10px;
+                background: no-repeat center/100% url(/img/main/content/content_vector_1.svg);
+                width: 20px;
+                height: 20px;
+            } 
+        }
+        .btn__buy{
+            @include btn_buy();
+            transition: ease .5s;
+            &:hover{
+                background-color: #8895c5;
+                border-color: #8895c5;
+            }
+            &.buy-1{
+                margin-top: 30px;
+            }
+        }
+    }   
+    /*  cream Care block  */
+
+    /*  gel Care block  */
+    .gel__Care{
+        margin: 0 0 50px 0;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content__title{
+            margin: 0 auto;
+            @include title_style;
+
+            &.title-w-3{
+                max-width: 430px;
+            }
+            &.title-w-4{
+            }
+        }
+        .content__block-2{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .block__frame-2{
+                width: 405px;
+                height: 283px;
+               .content__img_3{
+                    width: 125px;
+                    height: 283px;
+                    margin-left: 141px;
+                    transition: ease .5s;
+                    &:hover{
+                        width: 135px;
+                        height: 390px;
+                    }
+               }
+            }
+            .content__text{
+                @include main_text;
+                &.text-b-3{
+                    width: 403px;
+                    margin-left: 60px;  
+                }
+            }
+        }
+        .subtitle{
+            @include subtitle_style;
+            &.subtitle-mg-1{
+                margin-top: 25px;
+            }
+            &.subtitle-mg-3{
+                margin-top: 30px;
+            }
+        }
+        .content__text{
+            @include main_text;
+            &.text-b-4{
+                width: 703px;
+                margin-top: 24px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+        }
+        .background__gray{
+            width: 100%;
+            background-color: #F7F8FA;
+            padding: 40px 0 50px 0;
+            margin-bottom: 68px;
+
+        }
+        .content__list{
+            position: relative;
+            top: 22px;
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 19px;
+            }
+            .content__vector_1{
+                margin-right: 10px;
+                background: no-repeat center/100% url(/img/main/content/content_vector_1.svg);
+                width: 20px;
+                height: 20px;
+            } 
+        } 
+        .btn__buy{
+            @include btn_buy;
+            transition: ease .5s;
+            &:hover{
+                background-color: #8895c5;
+                border-color: #8895c5;
+            }
+            &.buy-2{}
+        }       
+    }
+    /*  gel Care block  */
+
+    /*  Results block  */
+    .result{
+        margin: 0 0 40px 0;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .subtitle{
+            @include subtitle_style;
+            &.subtitle-mg-4{}
+        }
+        .content__title{
+            @include title_style;
+            &.title-w-5{
+                margin: 14px 0 43px 0;
+                width: 593px;
+            }
+            &.title-w-6{
+                margin-top: 50px;
+                width: 550px;
+            }
+        }
+        .background__gray{
+            width: 100%;
+            background-color: #F7F8FA;
+            padding: 50px 0;
+        }
+        .content__block-3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .block__text{
+                max-width: 403px;
+                .subtitle{
+                    &.subtitle-mg-5{
+                        max-width: 320px;
+                        text-align: left;
+                    }
+                } 
+                .content__text{
+                    @include main_text;
+                    &.text-b-5{
+                        margin-top: 14px;
+                    }
+                }
+            }
+            .content__img_4{
+                margin-left: 62px;
+                width: 405px;
+                height: 505px;
+            }
+        }
+        .content__block-4{
+            margin-top: 68px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .block__text{
+                max-width: 403px;
+                .subtitle{
+                    &.subtitle-mg-6{
+                        max-width: 329px;
+                        text-align: left;
+                    }
+                } 
+                .content__text{
+                    @include main_text;
+                    &.text-b-6{
+                        max-width: 400px;
+                        margin-top: 14px;
+                    }
+                }
+            }
+            .content__img_5{
+                margin-right: 62px;
+                width: 405px;
+                height: 505px;
+            }
+        }
+    }
+    /*  Results block  */
+
+}

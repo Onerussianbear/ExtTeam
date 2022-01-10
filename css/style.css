@@ -1,0 +1,1460 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 0;
+}
+
+@font-face {
+  font-family: 'Nivea Light OT';
+  src: url("../fonts/NiveaLightOT.eot");
+  src: local("Nivea Light OT"), local("NiveaLightOT"), url("../fonts/NiveaLightOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaLightOT.woff") format("woff"), url("../fonts/NiveaLightOT.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nivea Light OT';
+  src: url("../fonts/NiveaLightCondensedOT.eot");
+  src: local("Nivea Light Condensed OT"), local("NiveaLightCondensedOT"), url("../fonts/NiveaLightCondensedOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaLightCondensedOT.woff") format("woff"), url("../fonts/NiveaLightCondensedOT.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nivea Book OT';
+  src: url("../fonts/NiveaBookOT.eot");
+  src: local("Nivea Book OT"), local("NiveaBookOT"), url("../fonts/NiveaBookOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaBookOT.woff") format("woff"), url("../fonts/NiveaBookOT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nivea Book OT';
+  src: url("../fonts/NiveaBookOT.eot");
+  src: local("Nivea Book OT"), local("NiveaBookOT"), url("../fonts/NiveaBookOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaBookOT.woff") format("woff"), url("../fonts/NiveaBookOT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nivea Medium OT';
+  src: url("../fonts/NiveaMediumOT.eot");
+  src: local("Nivea Medium OT"), local("NiveaMediumOT"), url("../fonts/NiveaMediumOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaMediumOT.woff") format("woff"), url("../fonts/NiveaMediumOT.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NiveaBoldTextScreenOT';
+  src: url("../fonts/NiveaBoldTextScreenOT.eot");
+  src: local("NiveaBoldTextScreenOT"), url("../fonts/NiveaBoldTextScreenOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaBoldTextScreenOT.woff") format("woff"), url("../fonts/NiveaBoldTextScreenOT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nivea Bold OT';
+  src: url("../fonts/NiveaBoldOT.eot");
+  src: local("Nivea Bold OT"), local("NiveaBoldOT"), url("../fonts/NiveaBoldOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaBoldOT.woff") format("woff"), url("../fonts/NiveaBoldOT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nivea Bold Text OT';
+  src: url("../fonts/NiveaBoldTextOT.eot");
+  src: local("Nivea Bold Text OT"), local("NiveaBoldTextOT"), url("../fonts/NiveaBoldTextOT.eot?#iefix") format("embedded-opentype"), url("../fonts/NiveaBoldTextOT.woff") format("woff"), url("../fonts/NiveaBoldTextOT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+li, ul, p, a, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<< Header >>>>>>>>>>>>>>>>>>>*/
+.header .header__body .header__top {
+  width: 100%;
+  height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nivea Light OT';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0032A0;
+}
+
+.header .header__body .header__top .top__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__body .header__top .top__left .logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.header .header__body .header__top .top__left .logo:hover {
+  opacity: 0.5;
+}
+
+.header .header__body .header__top .top__left .left__link {
+  margin-right: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.header .header__body .header__top .top__left .left__link::before {
+  position: relative;
+  top: 24px;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #0032A0;
+  opacity: 0;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.header .header__body .header__top .top__left .left__link:hover::before {
+  opacity: 1;
+}
+
+.header .header__body .header__top .top__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 35px;
+  width: 163px;
+}
+
+.header .header__body .header__top .top__right .right__vector {
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.header .header__body .header__top .top__right .right__vector:hover {
+  opacity: 0.5;
+}
+
+.header .header__body .header__middle {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__body .header__middle .middle__link {
+  font-family: 'Nivea Light OT';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #0032A0;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.header .header__body .header__middle .middle__link:hover {
+  opacity: 0.5;
+}
+
+.header .header__body .header__middle .middle__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__body .header__middle .middle__left .middle_vector_1 {
+  width: 15px;
+  height: 18px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.header .header__body .header__middle .middle__left .middle_vector_1:hover {
+  opacity: 0.5;
+}
+
+.header .header__body .header__middle .middle__left .middle_vector_2 {
+  width: 8px;
+  height: 14px;
+  margin-right: 4.7px;
+  margin-left: 6.3px;
+}
+
+.header .header__body .header__middle .middle__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__body .header__middle .middle__right .middle_vector_3 {
+  width: 9.82px;
+  height: 12.5px;
+  margin-right: 5.16px;
+}
+
+.header .header__body .header__button {
+  margin-top: 15px;
+  margin-bottom: -1px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__body .header__button .header__link {
+  padding: 10px 40px 9px 40px;
+  border: 1px solid #EFF5FA;
+  border-radius: 5px;
+  font-family: 'Nivea Light OT';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #0032A0;
+}
+
+.header .header__body .header__button .header__link.mr-no {
+  margin-right: none;
+}
+
+.header .header__body .header__button .header__link.br-none {
+  border-right: none;
+}
+
+.header .header__body .header__button .header__link:hover {
+  background-color: #ced5ef;
+  color: white;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.header .line {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #d6dcec;
+}
+
+.header .line_1 {
+  top: 74px;
+}
+
+.header .line_2 {
+  top: 109px;
+}
+
+.header .banner {
+  width: 100%;
+  height: 650px;
+  margin-bottom: 73px;
+}
+
+.header .banner {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 650px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<< Main section >>>>>>>>>>>>>>>>>>>*/
+.main {
+  /*  cream Care block  */
+  /*  cream Care block  */
+  /*  gel Care block  */
+  /*  gel Care block  */
+  /*  Results block  */
+  /*  Results block  */
+}
+
+.main .cream__Care {
+  margin: 0 0 50px 0;
+}
+
+.main .cream__Care .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .cream__Care .content__title {
+  font-family: 'Nivea Bold Text OT';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.main .cream__Care .content__title.title-w-1 {
+  width: 600px;
+}
+
+.main .cream__Care .content__title.title-w-2 {
+  margin-top: 40px;
+}
+
+.main .cream__Care .content__block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 42px 0 50px 0;
+}
+
+.main .cream__Care .content__block-1 .block__frame-1 {
+  width: 405px;
+  height: 250px;
+}
+
+.main .cream__Care .content__block-1 .block__frame-1 .block__img-1 {
+  margin: 38px 0 0 46px;
+  width: 329px;
+  height: 248px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.main .cream__Care .content__block-1 .block__frame-1 .block__img-1:hover {
+  width: 350px;
+  height: 270px;
+}
+
+.main .cream__Care .content__block-1 .content__text {
+  font-family: 'Nivea Book OT';
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0032A0;
+}
+
+.main .cream__Care .content__block-1 .content__text.text-b-1 {
+  margin: 0 60px 50px 0;
+  margin-bottom: 50px;
+  max-width: 405px;
+}
+
+.main .cream__Care .subtitle {
+  font-family: 'Nivea Bold Text OT';
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.main .cream__Care .subtitle.subtitle-mg-1 {
+  margin-top: 25px;
+}
+
+.main .cream__Care .subtitle.subtitle-mg-2 {
+  margin-top: -10px;
+  width: 659px;
+}
+
+.main .cream__Care .content__text {
+  font-family: 'Nivea Book OT';
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0032A0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .cream__Care .content__text.text-b-2 {
+  margin-top: 24px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.main .cream__Care .content__img-1 {
+  margin: 23px 0 25px 0;
+  width: 329px;
+  height: 248px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.main .cream__Care .content__img-1:hover {
+  width: 350px;
+}
+
+.main .cream__Care .background__gray {
+  margin-top: 34px;
+  background-color: #F7F8FA;
+}
+
+.main .cream__Care .content__list {
+  padding: 22px 0 16px 0;
+}
+
+.main .cream__Care .content__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.main .cream__Care .content__list .content__vector_1 {
+  margin-right: 10px;
+  background: no-repeat center/100% url(/img/main/content/content_vector_1.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.main .cream__Care .btn__buy {
+  background: #0032A0;
+  border-radius: 100px;
+  padding: 17px 40px;
+  font-family: 'Nivea Bold Text OT';
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.main .cream__Care .btn__buy:hover {
+  background-color: #8895c5;
+  border-color: #8895c5;
+}
+
+.main .cream__Care .btn__buy.buy-1 {
+  margin-top: 30px;
+}
+
+.main .gel__Care {
+  margin: 0 0 50px 0;
+}
+
+.main .gel__Care .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .gel__Care .content__title {
+  margin: 0 auto;
+  font-family: 'Nivea Bold Text OT';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.main .gel__Care .content__title.title-w-3 {
+  max-width: 430px;
+}
+
+.main .gel__Care .content__block-2 {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .gel__Care .content__block-2 .block__frame-2 {
+  width: 405px;
+  height: 283px;
+}
+
+.main .gel__Care .content__block-2 .block__frame-2 .content__img_3 {
+  width: 125px;
+  height: 283px;
+  margin-left: 141px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.main .gel__Care .content__block-2 .block__frame-2 .content__img_3:hover {
+  width: 135px;
+  height: 390px;
+}
+
+.main .gel__Care .content__block-2 .content__text {
+  font-family: 'Nivea Book OT';
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0032A0;
+}
+
+.main .gel__Care .content__block-2 .content__text.text-b-3 {
+  width: 403px;
+  margin-left: 60px;
+}
+
+.main .gel__Care .subtitle {
+  font-family: 'Nivea Bold Text OT';
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.main .gel__Care .subtitle.subtitle-mg-1 {
+  margin-top: 25px;
+}
+
+.main .gel__Care .subtitle.subtitle-mg-3 {
+  margin-top: 30px;
+}
+
+.main .gel__Care .content__text {
+  font-family: 'Nivea Book OT';
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0032A0;
+}
+
+.main .gel__Care .content__text.text-b-4 {
+  width: 703px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.main .gel__Care .background__gray {
+  width: 100%;
+  background-color: #F7F8FA;
+  padding: 40px 0 50px 0;
+  margin-bottom: 68px;
+}
+
+.main .gel__Care .content__list {
+  position: relative;
+  top: 22px;
+}
+
+.main .gel__Care .content__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 19px;
+}
+
+.main .gel__Care .content__list .content__vector_1 {
+  margin-right: 10px;
+  background: no-repeat center/100% url(/img/main/content/content_vector_1.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.main .gel__Care .btn__buy {
+  background: #0032A0;
+  border-radius: 100px;
+  padding: 17px 40px;
+  font-family: 'Nivea Bold Text OT';
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.main .gel__Care .btn__buy:hover {
+  background-color: #8895c5;
+  border-color: #8895c5;
+}
+
+.main .result {
+  margin: 0 0 40px 0;
+}
+
+.main .result .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .result .subtitle {
+  font-family: 'Nivea Bold Text OT';
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.main .result .content__title {
+  font-family: 'Nivea Bold Text OT';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.main .result .content__title.title-w-5 {
+  margin: 14px 0 43px 0;
+  width: 593px;
+}
+
+.main .result .content__title.title-w-6 {
+  margin-top: 50px;
+  width: 550px;
+}
+
+.main .result .background__gray {
+  width: 100%;
+  background-color: #F7F8FA;
+  padding: 50px 0;
+}
+
+.main .result .content__block-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .result .content__block-3 .block__text {
+  max-width: 403px;
+}
+
+.main .result .content__block-3 .block__text .subtitle.subtitle-mg-5 {
+  max-width: 320px;
+  text-align: left;
+}
+
+.main .result .content__block-3 .block__text .content__text {
+  font-family: 'Nivea Book OT';
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0032A0;
+}
+
+.main .result .content__block-3 .block__text .content__text.text-b-5 {
+  margin-top: 14px;
+}
+
+.main .result .content__block-3 .content__img_4 {
+  margin-left: 62px;
+  width: 405px;
+  height: 505px;
+}
+
+.main .result .content__block-4 {
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .result .content__block-4 .block__text {
+  max-width: 403px;
+}
+
+.main .result .content__block-4 .block__text .subtitle.subtitle-mg-6 {
+  max-width: 329px;
+  text-align: left;
+}
+
+.main .result .content__block-4 .block__text .content__text {
+  font-family: 'Nivea Book OT';
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0032A0;
+}
+
+.main .result .content__block-4 .block__text .content__text.text-b-6 {
+  max-width: 400px;
+  margin-top: 14px;
+}
+
+.main .result .content__block-4 .content__img_5 {
+  margin-right: 62px;
+  width: 405px;
+  height: 505px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<< Catalog section >>>>>>>>>>>>>>>>>>>*/
+.catalog {
+  width: 100%;
+  background-color: #F7F8FA;
+  height: 100%;
+}
+
+.catalog .catalog__box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 468px 468px;
+      grid-template-columns: 468px 468px;
+  grid-gap: 50px 72px;
+}
+
+.catalog .catalog__box .catalog__item {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .catalog__item:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(211, 209, 209, 0.727);
+          box-shadow: 0px 0px 10px 1px rgba(211, 209, 209, 0.727);
+}
+
+.catalog .catalog__box .catalog__item:hover .item__img-2 {
+  width: 140px;
+}
+
+.catalog .catalog__box .catalog__item:hover .item__img-1 {
+  width: 300px;
+}
+
+.catalog .catalog__box .catalog__item .subtitle {
+  font-family: 'Nivea Light OT';
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.catalog .catalog__box .catalog__item .item__store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+}
+
+.catalog .catalog__box .catalog__item .item__store .item-ozon {
+  width: 135;
+  margin-right: 52px;
+}
+
+.catalog .catalog__box .catalog__item .item__store .item-wildberries {
+  width: 175px;
+}
+
+.catalog .catalog__box .catalog__item .item__buy {
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog .catalog__box .catalog__item .item__buy .buy-1 {
+  margin-right: 61px;
+  padding: 12px 35px;
+  border: 1px solid #0032A0;
+  border-radius: 24px;
+  font-family: 'Nivea Book OT';
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .catalog__item .item__buy .buy-1:hover {
+  background-color: #ced5ef;
+  color: white;
+  border-color: white;
+}
+
+.catalog .catalog__box .catalog__item .item__buy .buy-2 {
+  padding: 13px 35px;
+  border: 1px solid #0032A0;
+  border-radius: 24px;
+  font-family: 'Nivea Book OT';
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .catalog__item .item__buy .buy-2:hover {
+  background-color: #ced5ef;
+  color: white;
+  border-color: white;
+}
+
+.catalog .catalog__box .item-1 {
+  height: 620px;
+}
+
+.catalog .catalog__box .item-1 .item__img-2 {
+  margin-top: 52px;
+  width: 132px;
+  height: 298px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .item-1 .subtitle {
+  max-width: 320px;
+  margin-top: 30px;
+}
+
+.catalog .catalog__box .item-1 .item__store {
+  margin-top: 34px;
+}
+
+.catalog .catalog__box .item-1 .item__buy {
+  margin-top: 26px;
+}
+
+.catalog .catalog__box .item-2 {
+  height: 620px;
+}
+
+.catalog .catalog__box .item-2 .item__img-1 {
+  margin-top: 103px;
+  margin-left: 21px;
+  width: 266px;
+  height: 201px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .item-2 .subtitle {
+  max-width: 300px;
+  margin-top: 78px;
+}
+
+.catalog .catalog__box .item-2 .item__store {
+  margin-top: 34px;
+}
+
+.catalog .catalog__box .item-2 .item__buy {
+  margin-top: 26px;
+}
+
+.catalog .catalog__box .item-3 {
+  height: 555px;
+}
+
+.catalog .catalog__box .item-3 .item__img-1 {
+  margin-top: 51px;
+  margin-left: 14px;
+  width: 276px;
+  height: 206px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .item-3 .subtitle {
+  width: 343px;
+  margin-top: 50px;
+}
+
+.catalog .catalog__box .item-3 .item__store {
+  margin-top: 34px;
+}
+
+.catalog .catalog__box .item-3 .item__buy {
+  margin-top: 26px;
+}
+
+.catalog .catalog__box .item-4 {
+  height: 555px;
+}
+
+.catalog .catalog__box .item-4 .item__img-1 {
+  margin-top: 51px;
+  margin-left: 10px;
+  width: 276px;
+  height: 206px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .item-4 .subtitle {
+  width: 300px;
+  margin-top: 50px;
+}
+
+.catalog .catalog__box .item-4 .item__store {
+  margin-top: 34px;
+}
+
+.catalog .catalog__box .item-4 .item__buy {
+  margin-top: 26px;
+}
+
+.catalog .catalog__box .item-5 {
+  height: 595px;
+}
+
+.catalog .catalog__box .item-5 .item__img-1 {
+  margin-top: 49px;
+  margin-left: 5px;
+  width: 271px;
+  height: 202px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .item-5 .subtitle {
+  width: 300px;
+  margin-top: 55px;
+}
+
+.catalog .catalog__box .item-5 .item__store {
+  margin-top: 44px;
+}
+
+.catalog .catalog__box .item-5 .item__buy {
+  margin-top: 26px;
+}
+
+.catalog .catalog__box .item-6 {
+  height: 595px;
+}
+
+.catalog .catalog__box .item-6 .item__img-1 {
+  margin-top: 49px;
+  margin-left: 0px;
+  width: 271px;
+  height: 202px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.catalog .catalog__box .item-6 .subtitle {
+  width: 343px;
+  margin-top: 55px;
+}
+
+.catalog .catalog__box .item-6 .item__store {
+  margin-top: 44px;
+}
+
+.catalog .catalog__box .item-6 .item__buy {
+  margin-top: 26px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<< Share section >>>>>>>>>>>>>>>>>>>*/
+.share .share__content {
+  margin: 50px 0 54px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.share .share__content .content__title {
+  font-family: 'Nivea Medium OT';
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0032A0;
+}
+
+.share .share__content .social__web {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.share .share__content .social__web .vk {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.share .share__content .social__web .vk:hover {
+  opacity: 0.9;
+}
+
+.share .share__content .social__web .fb {
+  width: 50px;
+  height: 50px;
+}
+
+.share .share__content .social__web .fb:hover {
+  opacity: 0.9;
+}
+
+.share .share__content .agree {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nivea Light OT';
+  font-size: 10px;
+  text-align: center;
+  color: #0032A0;
+}
+
+.share .share__content .agree img {
+  width: 18px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.share .share__content .agree .agree__link {
+  margin-left: 4px;
+  color: #0032A0;
+  text-decoration: underline;
+}
+
+.share .share__content .agree .agree__link:hover {
+  opacity: 0.7;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<< Footer section >>>>>>>>>>>>>>>>>>>*/
+.footer {
+  width: 100%;
+  height: 535px;
+  background-color: #5B75B1;
+}
+
+.footer .footer__content {
+  width: 100%;
+  padding-top: 54px;
+  height: 475px;
+  background-color: #5B75B1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__content .footer__left .left__block__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 520px;
+  padding-bottom: 31px;
+}
+
+.footer .footer__content .footer__left .left__block__1 .footer__title {
+  margin-bottom: 15px;
+  font-family: 'NiveaBoldTextScreenOT';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer .footer__content .footer__left .left__block__1 .footer__link {
+  margin-bottom: 10px;
+  font-family: 'Nivea Light OT';
+  font-size: 12px;
+  line-height: 17px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: white;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.footer .footer__content .footer__left .left__block__1 .footer__link:hover {
+  color: #d6dcec;
+}
+
+.footer .footer__content .footer__left .left__block__1::after {
+  position: relative;
+  top: 30px;
+  display: block;
+  content: '';
+  width: 472px;
+  height: 1px;
+  background-color: white;
+  z-index: 2;
+}
+
+.footer .footer__content .footer__left .left__block__1::before {
+  position: relative;
+  top: 185px;
+  left: 336px;
+  display: block;
+  content: '';
+  width: 371px;
+  height: 1px;
+  background-color: white;
+  z-index: 2;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.footer .footer__content .footer__left .left__block__2 .footer__title {
+  padding-top: 36px;
+  margin-bottom: 15px;
+  font-family: 'NiveaBoldTextScreenOT';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer .footer__content .footer__left .left__block__2 .link__block {
+  max-width: 381px;
+  position: relative;
+  left: -10px;
+}
+
+.footer .footer__content .footer__left .left__block__2 .link__block .footer__link {
+  font-family: 'Nivea Light OT';
+  font-size: 12px;
+  line-height: 17px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: white;
+  padding: 0px 10px;
+  line-height: 24px;
+  border-right: 1px solid white;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.footer .footer__content .footer__left .left__block__2 .link__block .footer__link:hover {
+  color: #d6dcec;
+}
+
+.footer .footer__content .footer__left .left__block__2 .link__block .br-none {
+  border-right: none;
+}
+
+.footer .footer__content .footer__right .right__block__1 {
+  padding-left: 50px;
+}
+
+.footer .footer__content .footer__right .right__block__1 .footer__title {
+  font-family: 'NiveaBoldTextScreenOT';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer .footer__content .footer__right .right__block__1 .footer__text {
+  font-family: 'Nivea Light OT';
+  font-size: 12px;
+  line-height: 17px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer .footer__content .footer__right .right__block__1 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 18px 0 30px 0;
+}
+
+.footer .footer__content .footer__right .right__block__1 .form .form__input {
+  margin-bottom: 20px;
+  max-width: 300px;
+  height: 46px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: 'Nivea Light OT';
+  font-size: 16px;
+  color: #919191;
+  text-indent: 18px;
+  outline: none;
+}
+
+.footer .footer__content .footer__right .right__block__1 .form .submit {
+  font-family: 'NiveaBoldTextScreenOT';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  max-width: 176px;
+  padding: 14px 40px;
+  border-radius: 100px;
+  background-color: #06369D;
+  border: 1px solid #06369D;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.footer .footer__content .footer__right .right__block__1 .form .submit:hover {
+  background-color: #a5acc4;
+  border-color: #a5acc4;
+}
+
+.footer .footer__content .footer__right .right__block__1::after {
+  position: relative;
+  top: 0px;
+  display: block;
+  content: '';
+  width: 115%;
+  height: 1px;
+  background-color: white;
+  z-index: 2;
+}
+
+.footer .footer__content .footer__right .right__block__2 {
+  padding-left: 50px;
+  margin-top: 30px;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__title {
+  font-family: 'NiveaBoldTextScreenOT';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__social {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__social .vk {
+  width: 46px;
+  margin-right: 10px;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__social .vk:hover {
+  width: 50px;
+  margin-right: 6px;
+  opacity: 0.8;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__social .inst {
+  width: 46px;
+  margin-right: 10px;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__social .inst:hover {
+  width: 50px;
+  margin-right: 6px;
+  opacity: 0.8;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__social .youtube {
+  width: 46px;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.footer .footer__content .footer__right .right__block__2 .footer__social .youtube:hover {
+  width: 50px;
+  margin-right: 6px;
+  opacity: 0.8;
+}
+
+.footer .copyright {
+  height: 60px;
+  width: 100%;
+  background-color: #06369D;
+}
+
+.footer .copyright .copyright__content {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .copyright .copyright__content .beiersdorf {
+  width: 130px;
+}
+
+.footer .copyright .copyright__content .copy__text {
+  font-family: 'Nivea Light OT';
+  font-size: 14px;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.5;
+}

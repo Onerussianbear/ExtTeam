@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin-top: 0;
+}
+@font-face {
+    font-family: 'Nivea Light OT';
+    src: url('../fonts/NiveaLightOT.eot');
+    src: local('Nivea Light OT'), local('NiveaLightOT'),
+        url('../fonts/NiveaLightOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaLightOT.woff') format('woff'),
+        url('../fonts/NiveaLightOT.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nivea Light OT';
+    src: url('../fonts/NiveaLightCondensedOT.eot');
+    src: local('Nivea Light Condensed OT'), local('NiveaLightCondensedOT'),
+        url('../fonts/NiveaLightCondensedOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaLightCondensedOT.woff') format('woff'),
+        url('../fonts/NiveaLightCondensedOT.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nivea Book OT';
+    src: url('../fonts/NiveaBookOT.eot');
+    src: local('Nivea Book OT'), local('NiveaBookOT'),
+        url('../fonts/NiveaBookOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaBookOT.woff') format('woff'),
+        url('../fonts/NiveaBookOT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nivea Book OT';
+    src: url('../fonts/NiveaBookOT.eot');
+    src: local('Nivea Book OT'), local('NiveaBookOT'),
+        url('../fonts/NiveaBookOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaBookOT.woff') format('woff'),
+        url('../fonts/NiveaBookOT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nivea Medium OT';
+    src: url('../fonts/NiveaMediumOT.eot');
+    src: local('Nivea Medium OT'), local('NiveaMediumOT'),
+        url('../fonts/NiveaMediumOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaMediumOT.woff') format('woff'),
+        url('../fonts/NiveaMediumOT.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NiveaBoldTextScreenOT';
+    src: url('../fonts/NiveaBoldTextScreenOT.eot');
+    src: local('NiveaBoldTextScreenOT'),
+        url('../fonts/NiveaBoldTextScreenOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaBoldTextScreenOT.woff') format('woff'),
+        url('../fonts/NiveaBoldTextScreenOT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nivea Bold OT';
+    src: url('../fonts/NiveaBoldOT.eot');
+    src: local('Nivea Bold OT'), local('NiveaBoldOT'),
+        url('../fonts/NiveaBoldOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaBoldOT.woff') format('woff'),
+        url('../fonts/NiveaBoldOT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nivea Bold Text OT';
+    src: url('../fonts/NiveaBoldTextOT.eot');
+    src: local('Nivea Bold Text OT'), local('NiveaBoldTextOT'),
+        url('../fonts/NiveaBoldTextOT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NiveaBoldTextOT.woff') format('woff'),
+        url('../fonts/NiveaBoldTextOT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;
+}
+img{
+    width: 100%;
+    display: block;
+}
+li, ul, p, a, h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+$blu: #0032A0;
+
+
+
